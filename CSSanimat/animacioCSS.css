@@ -1,0 +1,28 @@
+.sky {
+    background: linear-gradient(rgb(0, 119, 255), lightblue);
+    height: 84vh;
+}
+
+.land {
+    background-color: green;
+    height: 100px;
+}
+
+.rocket{
+    width: 200px;
+    position: absolute;
+    bottom: 40px;
+}
+
+.rocket:hover {
+    animation-name: rocketLaunch;
+    animation-duration: 4s;
+}
+
+@keyframes rocketLaunch {
+    from {
+        bottom: 40px;
+    } to {
+        bottom: 200px;
+    }
+}
